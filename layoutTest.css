@@ -9,7 +9,13 @@ body {
   overflow-x: hidden;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 399px) {
+  #height-exception {
+    height: 150px !important;
+  }
+}
+
+@media only screen and (min-width: 580px) {
   .subtitle-description {
     font-size: 20px !important;
   }
@@ -75,7 +81,7 @@ body {
     letter-spacing: 2px;
     font-family: 'PT Serif', serif;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 20px;
     text-transform: uppercase;
   }
   .subtitle-description {
@@ -83,6 +89,7 @@ body {
     font-family: 'PT Sans', sans-serif;
     font-weight: 500;
     font-size: 15px;
+    margin-top: 8px;
   }
   .cropped1 {
     width: 200px;
@@ -100,6 +107,14 @@ body {
     -o-object-position: 75% 8%;
        object-position: 75% 8%;
   }
+  .cropped3 {
+    width: 200px;
+    height: 220px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: 75% 8%;
+    object-position: 75% 8%;
+  }
   .row {
     display: -ms-flexbox;
     display: -webkit-box;
@@ -115,7 +130,7 @@ body {
     padding: 0 10px;
   }
   .column img {
-    margin-top: 8px;
+    margin-top: 12px;
     vertical-align: middle;
     width: 100%;
   }

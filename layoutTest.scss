@@ -8,7 +8,14 @@ body{
     overflow-x: hidden;
 }
   
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width:399px) {
+    #height-exception{
+        height: 150px !important;
+        // margin-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width: 580px) {
     .subtitle-description{
         font-size: 20px !important;
     }
@@ -82,6 +89,10 @@ body{
         padding: 100px 0;
     }
 
+    .forth-row{
+        // margin-top: 65px !important;
+    }
+
     .subtitle-txt{
         color: black;
         text-align: center;
@@ -91,7 +102,7 @@ body{
         font: {
             family: 'PT Serif', serif;
             weight: 700;
-            size: 25px;
+            size: 20px;
         }
 
         text: {
@@ -104,6 +115,7 @@ body{
         font-family: 'PT Sans', sans-serif;
         font-weight: 500;
         font-size: 15px;
+        margin-top: 8px;
     }
 
     .cropped1 {
@@ -117,6 +129,15 @@ body{
         width: 200px ;
         height: 300px; 
         object-fit: cover;
+        object-position: 75% 8%;
+    }
+
+    .cropped3 {
+        width: 200px;
+        height: 220px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -o-object-position: 75% 8%;
         object-position: 75% 8%;
     }
 
@@ -136,7 +157,7 @@ body{
       }
       
       .column img {
-        margin-top: 8px;
+        margin-top: 12px;
         vertical-align: middle;
         width: 100%;
       }
