@@ -1,10 +1,42 @@
 @media only screen and (min-width: 580px) {
   .subtitle-description {
-    font-size: 20px !important;
+    font-size: 19px !important;
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 799px) {
+  .grid-container {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .cropped1 {
+    height: 300px !important;
+    width: inherit !important;
+  }
+  .cropped2 {
+    height: 320px !important;
+    width: inherit !important;
+  }
+  .padd-corection {
+    padding-left: 60px;
+  }
+  .row {
+    display: none !important;
+  }
+  .second-row {
+    padding: 75px 0 !important;
+  }
+  .numbered-section {
+    color: white;
+    height: 100% !important;
+    padding: 60px;
+    font-size: 4.5em !important;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
   #header {
     position: relative;
     text-align: center;
@@ -127,21 +159,6 @@
   }
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  overflow-x: hidden;
-}
-
-img {
-  width: 100%;
-}
-
 .row {
   display: -ms-flexbox;
   display: -webkit-box;
@@ -174,11 +191,63 @@ img {
 }
 
 @media screen and (max-width: 400px) {
-  .column {
-    -ms-flex: 100%;
-    -webkit-box-flex: 100%;
-            flex: 100%;
-    max-width: 100%;
+  .subtitle-txt {
+    font-size: 16px;
   }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  grid-gap: 15px;
+  background-color: red;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: 30px;
+}
+
+.row1 {
+  height: 300px;
+}
+
+.col1 {
+  width: 160px;
+}
+
+.col3 {
+  width: 320px;
+}
+
+.row2 {
+  height: 320px;
+}
+
+.item9 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 3 / 3 / 5 / 4;
 }
 /*# sourceMappingURL=layoutTest.css.map */
