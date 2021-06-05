@@ -4,6 +4,7 @@ $ptSans:  'PT Sans', sans-serif;
 
 @import "mobileVer";
 @import "imgGrid";
+@import "desktopVer";
 
 *{
     box-sizing: border-box;
@@ -11,20 +12,21 @@ $ptSans:  'PT Sans', sans-serif;
     padding: 0;
 }
 
+
 body{
     overflow-x: hidden;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 img{
     width: 100%;
 }
 
-
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 15px;
-    // background-color: red;
     padding: 10px;
   }
   
@@ -58,3 +60,6 @@ img{
     grid-area: 3 / 3 / 5 / 4;
 }
   
+.proba{
+    display: inline;
+}

@@ -4,108 +4,176 @@
     }
 }
 
+@media only screen and (min-width:768px) {
+    #footer-img{
+        height: 615px !important;
+    }
+    
+    #zem-style{
+        color: white;
+    }
+}
+
 @media only screen and (max-width: 799px) {
     .grid-container{
         display: none !important;
     };
 }
 
-@media only screen and (min-width: 800px) {
-    .cropped1 {
-        height: 300px !important;
-        width: inherit !important;
-    }
+#header {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: 0 10px;
 
-    .cropped2{
-        height: 320px !important;
-        width: inherit !important;
-    }
-
-    .cropped3{
-        width: 320px !important;
-        height: 657px !important;
-        object-fit: cover;
-        object-position: 64% 20% !important;
-    }
-
-    .padd-corection{
-        padding-left: 60px;
-    }
-
-    .row{
-        display: none !important;
-    }
-
-    .second-row {
-        padding: 75px 0 !important;
-    }
-
-    .numbered-section {
-        color: white;
-        height: 100% !important;
-        padding: 60px;
-        font-size: 4.5em !important;
+    img{
+        width: 100%;
     }
 }
 
-@media only screen and (max-width: 1400px) {
-    #header {
-        position: relative;
-        text-align: center;
-        color: white;
-        margin: 0 10px;
+#header-description{
+    color: black;
+    margin: 25px 0;
+    font-weight: 500;
+}
 
-        img{
-            width: 100%;
-        }
-    }
-    
-    #header-description{
-        color: black;
-        margin: 25px 0;
-        font-weight: 500;
-    }
-    
-    #centered {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        width: 100%;
-    
-        h1{
-            font-family: $ptSerif;
-        }
-    
-        p{
-            font: {
-                family: $ptSans;
-                size: 18px;
-                weight: 600;
-            }
-        }
-    }
-    
-    .colored{
-        background-color: $blueColor;
+#centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 100%;
+
+    h1{
+        font-family: $ptSerif;
     }
 
-    .numbered-section{
-        color: white;
-        padding: 65px;
-        padding: 55px 0;
-
-        text: {
-            align: center;
-        }
-
+    p{
         font: {
-            size: 8em;
-            family: $ptSerif;
+            family: $ptSans;
+            size: 18px;
+            weight: 600;
         }
     }
-    
+}
+
+.colored{
+    background-color: $blueColor;
+}
+
+.numbered-section{
+    color: white;
+    padding: 65px;
+    padding: 55px 0;
+
+    text: {
+        align: center;
+    }
+
+    font: {
+        size: 8em;
+        family: $ptSerif;
+    }
+}
+
+.subtitle-txt{
+    color: black;
+
+    letter-spacing: 2px;
+
+    font: {
+        family: $ptSerif;
+        weight: 700;
+        size: 20px;
+    }
+
+    text: {
+        transform: uppercase;
+        align: center;
+    }
+}
+
+.subtitle-description{
+    text-align: center;
+
+    font: {
+        family: $ptSans;
+        weight: 500;
+        size: 15px;
+    }
+
+    margin-top: 8px;
+}
+
+.cropped1 {
+    width: 200px ;
+    height: 200px;
+    object-fit: cover;
+    object-position: 20% 50%;
+}
+
+.cropped2 {
+    width: 200px ;
+    height: 300px; 
+    object-fit: cover;
+    object-position: 75% 8%;
+}
+
+.cropped3 {
+    width: 200px;
+    height: 220px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: 75% 8%;
+    object-position: 75% 8%;
+}
+
+.footer-title{
+    color: black;
+    letter-spacing: 2px;
+    font-family: $ptSerif;
+    font-weight: 800;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+#footer-text{
+    text-align: inherit;
+}
+
+#footer-img{
+    width: 100% !important;
+    // height: 600px !important;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: 64% 20% !important;
+    object-position: 17% 20% !important;
+}
+
+
+#zem{
+    color:$blueColor;
+
+    font: {
+        size: 3em;
+        family: $ptSans;
+        weight: 600;
+    }
+
+    text: {
+        align: center;
+        transform: uppercase;
+    }
+
+    margin: 0;
+}
+
+@media only screen and (max-width: 799px) {
+    #main-section{
+        // margin: 0 500px;
+    }
+   
     .first-row{
         margin-bottom: 10px;
     }
@@ -120,99 +188,10 @@
         padding: 100px 0;
     }
 
-    .subtitle-txt{
-        color: black;
-
-        letter-spacing: 2px;
-
-        font: {
-            family: $ptSerif;
-            weight: 700;
-            size: 20px;
-        }
-
-        text: {
-            transform: uppercase;
-            align: center;
-        }
-    }
-
-    .subtitle-description{
-        text-align: center;
-
-        font: {
-            family: $ptSans;
-            weight: 500;
-            size: 15px;
-        }
-
-        margin-top: 8px;
-    }
-
-    .cropped1 {
-        width: 200px ;
-        height: 200px;
-        object-fit: cover;
-        object-position: 20% 50%;
-    }
-
-    .cropped2 {
-        width: 200px ;
-        height: 300px; 
-        object-fit: cover;
-        object-position: 75% 8%;
-    }
-
-    .cropped3 {
-        width: 200px;
-        height: 220px;
-        -o-object-fit: cover;
-        object-fit: cover;
-        -o-object-position: 75% 8%;
-        object-position: 75% 8%;
-    }
-
     #footer{
-        padding: 0 50px;
+        padding: 0 5px;
+        margin-top: 20px;
     }
-
-    #footer-title{
-        color: black;
-        letter-spacing: 2px;
-        font-family: $ptSerif;
-        font-weight: 800;
-        font-size: 45px;
-        text-transform: uppercase;
-    }
-
-    #footer-text{
-        text-align: inherit;
-    }
-
-    #zem{
-        color:$blueColor;
-
-        font: {
-            size: 3em;
-            family: $ptSans;
-            weight: 600;
-        }
-
-        text: {
-            align: center;
-            transform: uppercase;
-        }
-
-        margin: 0;
-    }
-
-    #footer-img{
-        width: 100%;
-        padding: 10px;
-    }
-
-    // .proba{
-    //     height: 200px;
-    // }
 }
+
 
