@@ -1,3 +1,9 @@
+$blueColor: rgb(137, 207, 240);
+$ptSerif:  'PT Serif', serif;
+$ptSans:  'PT Sans', sans-serif;
+
+@import "mobileVer";
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -7,177 +13,47 @@
 body{
     overflow-x: hidden;
 }
-  
-@media only screen and (max-width:399px) {
-    #height-exception{
-        height: 150px !important;
-        // margin-bottom: 10px;
-    }
+
+img{
+    width: 100%;
 }
 
-@media only screen and (min-width: 580px) {
-    .subtitle-description{
-        font-size: 20px !important;
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     }
-}
-
-@media only screen and (max-width: 767px) {
-    #header {
-        position: relative;
-        text-align: center;
-        color: white;
-        margin: 0 10px;
-
-        img{
-            width: 100%;
+    
+    .column {
+    -ms-flex: 25%; 
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 10px;
+    }
+    
+    .column img {
+    margin-top: 12px;
+    vertical-align: middle;
+    width: 100%;
+    }
+    
+    @media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
         }
     }
     
-    #header-description{
-        color: black;
-        margin: 25px 0;
-        font-weight: 500;
-    }
-    
-    #centered {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        width: 100%;
-    
-        h1{
-            font-family: 'PT Serif', serif;
-        }
-    
-        p{
-            font-family: 'PT Sans', sans-serif;
-            font-size: 18px;
-            font-weight: 600;
+    @media screen and (max-width:400px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
         }
     }
     
-    .colored{
-        background-color: rgb(137, 207, 240);
-    }
-
-    .numbered-section{
-        color: white;
-        padding: 65px;
-        padding: 70px 0;
-        text-align: center;
-
-        font: {
-            size: 8em;
-            family: 'PT Serif', serif;
-        }
-    }
-    
-    .first-row{
-        height: 300px;
-        // margin-bottom: 10px;
-    }
-
-    .second-row{
-        height: 400px;
-        padding: 120px 0;
-    }
-
-    .third-row{
-        height: 350px;
-        padding: 100px 0;
-    }
-
-    .forth-row{
-        // margin-top: 65px !important;
-    }
-
-    .subtitle-txt{
-        color: black;
-        text-align: center;
-
-        letter-spacing: 2px;
-
-        font: {
-            family: 'PT Serif', serif;
-            weight: 700;
-            size: 20px;
-        }
-
-        text: {
-            transform: uppercase;
-        }
-    }
-
-    .subtitle-description{
-        text-align: center;
-        font-family: 'PT Sans', sans-serif;
-        font-weight: 500;
-        font-size: 15px;
-        margin-top: 8px;
-    }
-
-    .cropped1 {
-        width: 200px ;
-        height: 200px;
-        object-fit: cover;
-        object-position: 20% 50%;
-    }
-
-    .cropped2 {
-        width: 200px ;
-        height: 300px; 
-        object-fit: cover;
-        object-position: 75% 8%;
-    }
-
-    .cropped3 {
-        width: 200px;
-        height: 220px;
-        -o-object-fit: cover;
-        object-fit: cover;
-        -o-object-position: 75% 8%;
-        object-position: 75% 8%;
-    }
-
-    .row {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        // padding: 0 25px;
-      }
-      
-      .column {
-        -ms-flex: 25%; 
-        flex: 25%;
-        max-width: 25%;
-        padding: 0 10px;
-      }
-      
-      .column img {
-        margin-top: 12px;
-        vertical-align: middle;
-        width: 100%;
-      }
-      
-      @media screen and (max-width: 800px) {
-        .column {
-          -ms-flex: 50%;
-          flex: 50%;
-          max-width: 50%;
-        }
-      }
-      
-      @media screen and (max-width:400px) {
-        .column {
-          -ms-flex: 100%;
-          flex: 100%;
-          max-width: 100%;
-        }
-      }
-    }    
 
 
   

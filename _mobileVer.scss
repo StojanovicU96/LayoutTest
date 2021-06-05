@@ -1,0 +1,169 @@
+@media only screen and (min-width: 580px) {
+    .subtitle-description{
+        font-size: 20px !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #header {
+        position: relative;
+        text-align: center;
+        color: white;
+        margin: 0 10px;
+
+        img{
+            width: 100%;
+        }
+    }
+    
+    #header-description{
+        color: black;
+        margin: 25px 0;
+        font-weight: 500;
+    }
+    
+    #centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        width: 100%;
+    
+        h1{
+            font-family: $ptSerif;
+        }
+    
+        p{
+            font: {
+                family: $ptSans;
+                size: 18px;
+                weight: 600;
+            }
+        }
+    }
+    
+    .colored{
+        background-color: $blueColor;
+    }
+
+    .numbered-section{
+        color: white;
+        padding: 65px;
+        padding: 70px 0;
+
+        text: {
+            align: center;
+        }
+
+        font: {
+            size: 8em;
+            family: $ptSerif;
+        }
+    }
+    
+    .first-row{
+        margin-bottom: 10px;
+    }
+
+    .second-row{
+        height: 440px;
+        padding: 150px 0;
+    }
+
+    .third-row{
+        height: 350px;
+        padding: 100px 0;
+    }
+
+    .subtitle-txt{
+        color: black;
+
+        letter-spacing: 2px;
+
+        font: {
+            family: $ptSerif;
+            weight: 700;
+            size: 20px;
+        }
+
+        text: {
+            transform: uppercase;
+            align: center;
+        }
+    }
+
+    .subtitle-description{
+        text-align: center;
+
+        font: {
+            family: $ptSans;
+            weight: 500;
+            size: 15px;
+        }
+
+        margin-top: 8px;
+    }
+
+    .cropped1 {
+        width: 200px ;
+        height: 200px;
+        object-fit: cover;
+        object-position: 20% 50%;
+    }
+
+    .cropped2 {
+        width: 200px ;
+        height: 300px; 
+        object-fit: cover;
+        object-position: 75% 8%;
+    }
+
+    .cropped3 {
+        width: 200px;
+        height: 220px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -o-object-position: 75% 8%;
+        object-position: 75% 8%;
+    }
+
+    #footer{
+        padding: 0 50px;
+    }
+
+    #footer-title{
+        color: black;
+        letter-spacing: 2px;
+        font-family: $ptSerif;
+        font-weight: 800;
+        font-size: 45px;
+        text-transform: uppercase;
+    }
+
+    #footer-text{
+        text-align: inherit;
+    }
+
+    #zem{
+        color:$blueColor;
+
+        font: {
+            size: 3em;
+            family: $ptSans;
+            weight: 600;
+        }
+
+        text: {
+            align: center;
+            transform: uppercase;
+        }
+
+        margin: 0;
+    }
+
+    #footer-img{
+        width: 100%;
+        padding: 10px;
+    }
+}
