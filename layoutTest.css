@@ -19,6 +19,14 @@
     height: 320px !important;
     width: inherit !important;
   }
+  .cropped3 {
+    width: 320px !important;
+    height: 657px !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 64% 20% !important;
+       object-position: 64% 20% !important;
+  }
   .padd-corection {
     padding-left: 60px;
   }
@@ -74,7 +82,7 @@
   .numbered-section {
     color: white;
     padding: 65px;
-    padding: 70px 0;
+    padding: 55px 0;
     text-align: center;
     font-size: 8em;
     font-family: "PT Serif", serif;
@@ -217,7 +225,6 @@ img {
   -ms-grid-columns: auto auto auto;
       grid-template-columns: auto auto auto;
   grid-gap: 15px;
-  background-color: red;
   padding: 10px;
 }
 
@@ -241,6 +248,10 @@ img {
 
 .row2 {
   height: 320px;
+}
+
+.row4 {
+  height: 275px;
 }
 
 .item9 {

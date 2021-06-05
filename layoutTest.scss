@@ -24,7 +24,7 @@ img{
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 15px;
-    background-color: red;
+    // background-color: red;
     padding: 10px;
   }
   
@@ -48,6 +48,10 @@ img{
 
 .row2{
     height: 320px;
+}
+
+.row4{
+    height: 275px;
 }
 
 .item9{

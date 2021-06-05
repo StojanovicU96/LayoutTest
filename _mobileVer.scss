@@ -21,6 +21,13 @@
         width: inherit !important;
     }
 
+    .cropped3{
+        width: 320px !important;
+        height: 657px !important;
+        object-fit: cover;
+        object-position: 64% 20% !important;
+    }
+
     .padd-corection{
         padding-left: 60px;
     }
@@ -87,7 +94,7 @@
     .numbered-section{
         color: white;
         padding: 65px;
-        padding: 70px 0;
+        padding: 55px 0;
 
         text: {
             align: center;
