@@ -12,6 +12,12 @@
     #zem-style{
         color: white;
     }
+
+    #zem{
+        position: absolute;
+        left: 73%;
+        z-index: 1;
+    }
 }
 
 @media only screen and (max-width: 799px) {
